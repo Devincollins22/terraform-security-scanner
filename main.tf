@@ -3,7 +3,7 @@
 
 resource "aws_security_group" "bad_sg" {
   name        = "bad-security-group"
-  description = "Allows SSH from anywhere"
+  description = "Allows SSH from a resticted network"
 
   ingress {
     from_port   = 22
