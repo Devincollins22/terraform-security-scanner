@@ -11,6 +11,6 @@ resource "aws_security_group" "bad_sg" {
     protocol    = "tcp"
 
     # BAD PRACTICE: Open to the entire internet
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["10.0.0.0/24"]
   }
 }
